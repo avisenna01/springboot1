@@ -1,0 +1,5 @@
+INSERT INTO Event (id, title, start_on, complete_on, participant, location)
+VALUES (1,'Konser C','2024-09-05T13:18:38.448367','2024-09-05T19:18:38.448377',600,'DEPOK'),
+(2,'Konser D','2024-09-05T13:18:38.448367','2024-09-05T19:18:38.448377',700,'DEPOK'),
+(3,'Konser E','2024-09-05T13:18:38.448367','2024-09-05T19:18:38.448377',800,'DEPOK');
+

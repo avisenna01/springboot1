@@ -1,0 +1,7 @@
+Step:
+1. Buat logger(slf4j) di class Application.java
+2. Buat record Event.java untuk define field/variable dan tipe datanya
+3. Buat enum location untuk constant value dari location
+4. Buat class EventController untuk atur endpoint API
+5. Buat class EventRepository untuk tambah mock data dan logic untuk method findAll(),
+findByID(), etc.
