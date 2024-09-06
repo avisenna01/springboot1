@@ -20,7 +20,7 @@ public class DemomavenApplication {
 		System.out.println(helloWorld.sayHelloWorld());
 	}
 
-//	@Bean
+//	@BeanB
 //	CommandLineRunner runner(
 //	) {
 //		return args -> {

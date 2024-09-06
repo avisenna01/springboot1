@@ -1,0 +1,36 @@
+{
+  "events": [
+    {
+      "id": 1,
+      "title": "Gathering",
+      "startOn": "2024-09-05T13:18:38.448367",
+      "completeOn": "2024-10-05T13:18:38.448367",
+      "participant": 100,
+      "location": "DEPOK"
+    },
+    {
+      "id": 2,
+      "title": "Ceremony",
+      "startOn": "2024-09-05T13:18:38.448367",
+      "completeOn": "2024-10-05T13:18:38.448367",
+      "participant": 310,
+      "location": "JAKARTA"
+    },
+    {
+      "id": 3,
+      "title": "Grand Opening",
+      "startOn": "2024-09-05T13:18:38.448367",
+      "completeOn": "2024-10-05T13:18:38.448367",
+      "participant": 200,
+      "location": "DEPOK"
+    },
+    {
+      "id": 4,
+      "title": "Meeting",
+      "startOn": "2024-09-05T13:18:38.448367",
+      "completeOn": "2024-10-05T13:18:38.448367",
+      "participant": 570,
+      "location": "JAKARTA"
+    }
+  ]
+}
