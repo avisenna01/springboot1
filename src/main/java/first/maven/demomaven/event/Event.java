@@ -2,18 +2,19 @@ package first.maven.demomaven.event;
 
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.Positive;
+import org.springframework.data.annotation.Id;
+import org.springframework.data.annotation.Version;
 
 import java.time.LocalDateTime;
 
 public record Event(
-    Integer id,
-    @NotEmpty
-    String title,
+    @Id Integer id,
+    @NotEmpty String title,
     LocalDateTime startOn,
     LocalDateTime completeOn,
-    @Positive
-    Integer participant,
-    Location location
+    @Positive Integer participant,
+    Location location,
+    @Version Integer version
 ){
 //    public Integer getId() {
 //        return id;

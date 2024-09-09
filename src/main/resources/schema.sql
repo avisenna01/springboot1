@@ -5,5 +5,6 @@ create table if not exists Event (
     complete_on timestamp NOT NULL,
     participant INT NOT NULL,
     location varchar(10) NOT NULL,
+    version INT,
     PRIMARY KEY(id)
 );
