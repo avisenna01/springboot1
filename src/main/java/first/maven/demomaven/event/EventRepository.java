@@ -1,10 +1,12 @@
 package first.maven.demomaven.event;
 
+import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.repository.ListCrudRepository;
 
 import java.util.List;
 
-public interface EventRepository extends ListCrudRepository<Event, Integer> {
+//public interface EventRepository extends ListCrudRepository<Event, Integer> {
+public interface EventRepository extends JpaRepository<Event, Integer> {
 
     List<Event> findAllByLocation(String location);
 

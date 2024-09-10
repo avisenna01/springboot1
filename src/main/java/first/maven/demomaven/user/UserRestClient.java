@@ -1,10 +1,14 @@
 package first.maven.demomaven.user;
 
 import org.springframework.core.ParameterizedTypeReference;
+import org.springframework.stereotype.Component;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestClient;
 
 import java.util.List;
 
+@Component
 public class UserRestClient {
     private final RestClient restClient;
 

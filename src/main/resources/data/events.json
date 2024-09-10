@@ -6,7 +6,8 @@
       "startOn": "2024-09-05T13:18:38.448367",
       "completeOn": "2024-10-05T13:18:38.448367",
       "participant": 100,
-      "location": "DEPOK"
+      "location": "DEPOK",
+      "version": 1
     },
     {
       "id": 2,
@@ -14,7 +15,8 @@
       "startOn": "2024-09-05T13:18:38.448367",
       "completeOn": "2024-10-05T13:18:38.448367",
       "participant": 310,
-      "location": "JAKARTA"
+      "location": "JAKARTA",
+      "version": 1
     },
     {
       "id": 3,
@@ -22,7 +24,8 @@
       "startOn": "2024-09-05T13:18:38.448367",
       "completeOn": "2024-10-05T13:18:38.448367",
       "participant": 200,
-      "location": "DEPOK"
+      "location": "DEPOK",
+      "version": 2
     },
     {
       "id": 4,
@@ -30,7 +33,17 @@
       "startOn": "2024-09-05T13:18:38.448367",
       "completeOn": "2024-10-05T13:18:38.448367",
       "participant": 570,
-      "location": "JAKARTA"
+      "location": "JAKARTA",
+      "version": 1
+    },
+    {
+      "id": 5,
+      "title": "Meeting",
+      "startOn": "2024-09-05T13:18:38.448367",
+      "completeOn": "2024-10-05T13:18:38.448367",
+      "participant": 570,
+      "location": "JAKARTA",
+      "version": 1
     }
   ]
 }
