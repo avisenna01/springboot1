@@ -1,4 +1,4 @@
-package first.maven.demomaven.participant;
+package first.maven.demomaven.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;

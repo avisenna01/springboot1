@@ -1,6 +1,7 @@
 package first.maven.demomaven.event;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import first.maven.demomaven.repository.EventRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.asm.TypeReference;

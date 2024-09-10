@@ -1,7 +1,8 @@
-package first.maven.demomaven.participant;
+package first.maven.demomaven.service;
 
-import first.maven.demomaven.event.Event;
 import first.maven.demomaven.event.EventNotFoundException;
+import first.maven.demomaven.model.Participant;
+import first.maven.demomaven.repository.ParticipantRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -31,7 +32,7 @@ public class ParticipantService {
     }
 
     // PUT
-    void update(Participant participant, Integer id) {
+    public void update(Participant participant, Integer id) {
         if(!participantRepository.existsById(id)) {
             throw new EventNotFoundException();
         }
@@ -45,7 +46,7 @@ public class ParticipantService {
     }
 
     // DELETE
-    void delete(Integer id) {
+    public void delete(Integer id) {
         participantRepository.delete(participantRepository
                 .findById(id)
                 .orElseThrow(() -> new EventNotFoundException()));

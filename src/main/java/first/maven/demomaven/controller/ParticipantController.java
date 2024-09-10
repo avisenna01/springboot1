@@ -1,6 +1,7 @@
-package first.maven.demomaven.participant;
+package first.maven.demomaven.controller;
 
-import first.maven.demomaven.event.Event;
+import first.maven.demomaven.model.Participant;
+import first.maven.demomaven.service.ParticipantService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;

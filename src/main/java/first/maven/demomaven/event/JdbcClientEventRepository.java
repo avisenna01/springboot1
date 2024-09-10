@@ -1,5 +1,6 @@
 package first.maven.demomaven.event;
 
+import first.maven.demomaven.model.Event;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.core.simple.JdbcClient;
@@ -7,7 +8,6 @@ import org.springframework.stereotype.Repository;
 import org.springframework.util.Assert;
 
 import java.util.List;
-import java.util.Optional;
 
 @Repository // EventRepository -> JdbcClientEventRepository
 public class JdbcClientEventRepository {

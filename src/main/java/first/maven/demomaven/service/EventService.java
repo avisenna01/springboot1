@@ -1,13 +1,11 @@
-package first.maven.demomaven.event;
+package first.maven.demomaven.service;
 
-import jakarta.validation.Valid;
-import org.springframework.http.HttpStatus;
+import first.maven.demomaven.model.Event;
+import first.maven.demomaven.event.EventNotFoundException;
+import first.maven.demomaven.repository.EventRepository;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.*;
-import org.springframework.web.server.ResponseStatusException;
 
 import java.util.List;
-import java.util.Optional;
 
 @Service
 public class EventService {
@@ -49,7 +47,7 @@ public class EventService {
 //    }
 
     // UPDATED EVENT SERVICE
-    Event findById(Integer id) {
+    public Event findById(Integer id) {
         return eventRepository
                 .findById(id)
                 .orElseThrow(() -> new EventNotFoundException());
@@ -84,7 +82,7 @@ public class EventService {
 //    // PUT
 //    @ResponseStatus(HttpStatus.NO_CONTENT)
 //    @PutMapping("/{id}")
-    void update(Event event, Integer id) {
+    public void update(Event event, Integer id) {
         if(!eventRepository.existsById(id)) {
             throw new EventNotFoundException();
         }
@@ -106,7 +104,7 @@ public class EventService {
 //    // DELETE
 //    @ResponseStatus(HttpStatus.NO_CONTENT)
 //    @DeleteMapping("/{id}")
-    void delete(Integer id) {
+    public void delete(Integer id) {
 //        eventRepository.delete(id);
         eventRepository.delete(eventRepository
                 .findById(id)
@@ -141,7 +139,7 @@ public class EventService {
 
     // FIND WITH PATH
 //    @GetMapping("/location/{location}")
-    List<Event> findByLocation(String location) {
+    public List<Event> findByLocation(String location) {
         return eventRepository.findAllByLocation(location);
     }
 }

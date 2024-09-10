@@ -1,7 +1,7 @@
-package first.maven.demomaven.event;
+package first.maven.demomaven.repository;
 
+import first.maven.demomaven.model.Event;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.repository.ListCrudRepository;
 
 import java.util.List;
 

@@ -1,5 +1,6 @@
-package first.maven.demomaven.participant;
+package first.maven.demomaven.repository;
 
+import first.maven.demomaven.model.Participant;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.List;
