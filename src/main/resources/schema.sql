@@ -1,4 +1,4 @@
-create table if not exists Event (
+create table if not exists Testing (
     id INT NOT NULL,
     title varchar(250) NOT NULL,
     start_on timestamp NOT NULL,
