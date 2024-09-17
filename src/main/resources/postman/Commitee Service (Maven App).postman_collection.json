@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "f536b3c3-54b5-411c-9401-7ea13a7147f8",
+		"name": "Commitee Service (Maven App)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9038868"
+	},
+	"item": [
+		{
+			"name": "GET list of commitees",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "123",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "alif",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/commitees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"commitees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE commitee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWxpZiIsImV4cCI6MTcyNjUzNzA3MSwiaWF0IjoxNzI2NTMzNDcxLCJzY29wZSI6InJlYWQifQ.QtVESWcrm-ozhxsnH2RNGY503uG31mIHlW9APq7cQhkfAJ1mTtdZ39FeuI-_vm3i9DUS2LkawBy3IOsQu5o0Rpj5dUO3NPSwzM_-_zDGZVgBL5Rc7EI-Qt81Vqj94RnhH2KNoL19lcPxHVXwDNdzefbI5Bv7RBGZCcuk0-Iqob7YD7K5VaE2dvKt_B5rb6txCJDlip1ySj-CPa6wSVoUgtl32aU-pnPp0IqyHe08Rbxq4FBoTVRsFY9xk5-L97xcz7ZYH70xLHgJ1bPTlGDcRQsaMoN7VCBAahSFPARlAoRiSS5DvGFwP09pgve6UKAl-IGYtwqNWTlvUoshkCCFqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\n        \"eventId\": 16,\n        \"name\": \"daud\",\n        \"email\": \"daud@gmail.com\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/commitees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"commitees"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE commitee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWxpZiIsImV4cCI6MTcyNjUzNzA3MSwiaWF0IjoxNzI2NTMzNDcxLCJzY29wZSI6InJlYWQifQ.QtVESWcrm-ozhxsnH2RNGY503uG31mIHlW9APq7cQhkfAJ1mTtdZ39FeuI-_vm3i9DUS2LkawBy3IOsQu5o0Rpj5dUO3NPSwzM_-_zDGZVgBL5Rc7EI-Qt81Vqj94RnhH2KNoL19lcPxHVXwDNdzefbI5Bv7RBGZCcuk0-Iqob7YD7K5VaE2dvKt_B5rb6txCJDlip1ySj-CPa6wSVoUgtl32aU-pnPp0IqyHe08Rbxq4FBoTVRsFY9xk5-L97xcz7ZYH70xLHgJ1bPTlGDcRQsaMoN7VCBAahSFPARlAoRiSS5DvGFwP09pgve6UKAl-IGYtwqNWTlvUoshkCCFqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"eventId\": 16,\n        \"name\": \"lemon\",\n        \"email\": \"lemon@gmail.com\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/commitees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"commitees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE commitee",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJSUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYWxpZiIsImV4cCI6MTcyNjUzNzA3MSwiaWF0IjoxNzI2NTMzNDcxLCJzY29wZSI6InJlYWQifQ.QtVESWcrm-ozhxsnH2RNGY503uG31mIHlW9APq7cQhkfAJ1mTtdZ39FeuI-_vm3i9DUS2LkawBy3IOsQu5o0Rpj5dUO3NPSwzM_-_zDGZVgBL5Rc7EI-Qt81Vqj94RnhH2KNoL19lcPxHVXwDNdzefbI5Bv7RBGZCcuk0-Iqob7YD7K5VaE2dvKt_B5rb6txCJDlip1ySj-CPa6wSVoUgtl32aU-pnPp0IqyHe08Rbxq4FBoTVRsFY9xk5-L97xcz7ZYH70xLHgJ1bPTlGDcRQsaMoN7VCBAahSFPARlAoRiSS5DvGFwP09pgve6UKAl-IGYtwqNWTlvUoshkCCFqQ",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/commitees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"commitees",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
