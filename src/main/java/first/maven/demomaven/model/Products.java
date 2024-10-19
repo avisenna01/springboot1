@@ -16,18 +16,20 @@ public class Products {
     @NotNull
     private Integer price;
     private String productName;
+    private String imagePath;
 
     public Products() {
 
     }
 
     public Products(Integer productId, String productDescription, Categories categories, Integer price
-    , String productName) {
+    , String productName, String imagePath) {
         this.productId = productId;
         this.productDescription = productDescription;
         this.categories = categories;
         this.price = price;
         this.productName = productName;
+        this.imagePath = imagePath;
     }
 
     public Integer getProductId() {
@@ -50,6 +52,10 @@ public class Products {
         return productName;
     }
 
+    public String getImagePath() {
+        return imagePath;
+    }
+
     public void setProductId(Integer productId) {
         this.productId = productId;
     }
@@ -68,5 +74,9 @@ public class Products {
 
     public void setProductName(String productName) {
         this.productName = productName;
+    }
+
+    public void setImagePath(String imagePath) {
+        this.imagePath = imagePath;
     }
 }
